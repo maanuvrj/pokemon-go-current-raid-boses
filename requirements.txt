@@ -1,6 +1,6 @@
 ﻿altair==5.2.0
 attrs==23.2.0
-beautifulsoup4==4.12.3
+bs4
 blinker==1.7.0
 bs4==0.0.2
 cachetools==5.3.3
