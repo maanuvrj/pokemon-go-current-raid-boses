@@ -6,11 +6,11 @@ import os
 
 today: date = date.today()
 df: pd.DataFrame
-if os.path.exists(f'{today}.csv'):
-    df = pd.read_csv(f'{today}.csv')
+if os.path.exists(rf'.\{today}.csv'):
+    df = pd.read_csv(rf'.\{today}.csv')
 else:
     read_and_store_data()
-    df = pd.read_csv(f'{today}.csv')
+    df = pd.read_csv(rf'.\{today}.csv')
 
 tiers = st.multiselect(
     'Choose Tiers',
