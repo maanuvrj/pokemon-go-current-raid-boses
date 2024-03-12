@@ -4,7 +4,7 @@ import pandas as pd
 from datetime import date
 
 today = date.today()
-
+DATA_PATH = rf'.\data\{today}'
 
 def read_and_store_data() -> None:
     """
@@ -54,4 +54,4 @@ def read_and_store_data() -> None:
         'boosted weather': boosted_weather
     }
     pokemon_data = pd.DataFrame(data)
-    pokemon_data.to_csv(rf'.\{today}.csv', index=False)
+    pokemon_data.to_csv(DATA_PATH, index=False)
