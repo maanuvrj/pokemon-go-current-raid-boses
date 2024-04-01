@@ -8,7 +8,7 @@ from PIL import Image
 today: date = date.today()
 df: pd.DataFrame
 DATA_DIR = r'data'
-DATA_PATH = rf'\data\{today}'
+DATA_PATH = rf'data\{today}'
 FAVICO = r'arceus-logo.png'
 
 if not os.path.exists(DATA_DIR):
