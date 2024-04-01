@@ -4,7 +4,7 @@ import pandas as pd
 from datetime import date
 
 today = date.today()
-DATA_PATH = rf'.\data\{today}'
+DATA_PATH = rf'data/{today}'
 
 def read_and_store_data() -> None:
     """
